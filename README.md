@@ -33,8 +33,8 @@ Por padrão será executado na porta 8282 e exposta pela mesma no Docker.
 Após a execução o projeto, poderá ser inserido via terminal os parâmetros do subreddit e separados por ponto e virgula.
 
 > Realizar o build do Docker e executar 
-> - **Build:** `docker build --file=Dockerfile --tag=config-stringformatter:latest --rm=true .` 
-> - **Run:** `docker run -i -t --name=app-stringFormatter --publish=8282:8282 --volume=app-stringFormatter:/var/lib/formatter/config-repo config-stringformatter:latest` 
+> - **Build:** `docker build --file=Dockerfile --tag=stringformatter:latest --rm=true .` 
+> - **Run:** `docker run -i -t --name=app-stringFormatter --publish=8282:8282 --volume=app-stringFormatter:/var/lib/formatter stringformatter:latest` 
 > 
 
 ## Construído com
